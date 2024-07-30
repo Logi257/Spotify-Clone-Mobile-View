@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-img {
+    height: 60px;
+    width: 120px;
+}
+
+.nav-color {
+    background-color: black;
+}
+
+.ham-link {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.log {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.sign {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.search {
+    font-size: 20px;
+    color: white;
+}
+
+.btn-opn {
+    background-color: white;
+    border-radius: 40px;
+    border-width: 0px;
+    padding: 5px;
+    width: 85px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.main-background {
+    background-color: #151515;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    /* add this to enable horizontal scrolling */
+}
+
+.artists-img {
+    height: 150px;
+    width: 150px;
+    padding: 8px;
+    border-radius: 13px;
+
+}
+
+.section-titles {
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.artists-name {
+    color: white;
+    font-size: 13px;
+    padding-left: 8px;
+    font-family: Roboto;
+}
+
+.artists-container {
+    overflow-x: auto;
+
+}
+
+.artists-container::-webkit-scrollbar {
+    display: none;
+}
+
+.first-card {
+    margin-top: 80px;
+}
+
+.card-container {
+    background-color: transparent;
+    height: 180px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card-container:hover {
+    background-color: #1b1b1b;
+}
+
+.final-heading {
+    color: white;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.final-para {
+    color: grey;
+    font-size: 13px;
+    line-height: 0.8em;
+}
+
+.social-icon {
+    background-color: #1b1b1b;
+    border-radius: 40px;
+    height: 30px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    ;
+    width: 35px;
+
+}
+
+.social {
+    font-size: 15px;
+    color: white;
+}
+
+.btm-text {
+    color: grey;
+    font-size: 13px;
+    line-height: 0.7em;
+}
+
+.lang {
+    border-radius: 40px;
+    border: 1px solid white;
+    width: 80px;
+    font-size: 11px;
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+
+
+}
+
+hr {
+    border: 1px solid grey;
+    width: 90%;
+
+}
+
+.banner {
+    margin-top: 70px;
+    background-color: #f3c5ca;
+}
+
+.premium {
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+.head {
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+    line-height: 1em;
+}
+
+.para {
+    color: #231917;
+    font-size: 17px;
+}
+
+.close-icon {
+    font-size: 17px;
+    color: #2c2223;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-checkbox:checked+.banner {
+    display: none;
+}

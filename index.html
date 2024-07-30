@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Spotify Clone</title>
+    <link rel="shortcut icon" type="x-icon" href="https://res.cloudinary.com/dhzux91au/image/upload/v1720929315/spotify_1_nww026.png">
+    <script src="https://kit.fontawesome.com/86076e5e87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-color p-0 fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://res.cloudinary.com/dhzux91au/image/upload/v1720522361/logo-new_n5jcsm.png" class="logo-img pt-2">
+        </a>
+        <i class="fa-solid fa-magnifying-glass search ml-auto"></i>
+        
+        <button class="btn-opn ml-3 mr-2 md-ml-auto">Open App</button>
+        <button class="navbar-toggler custom-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active ham-link log text-white ml-3" href="#">Log in<span class="sr-only">(current)</span></a>
+                <a class="nav-link ham-link sign text-white ml-3" href="#">Sign up</a>
+                <a class="nav-link ham-link text-white ml-3" href="#">__</a>
+                <a class="nav-link ham-link text-white ml-3" href="#">Premium</a>
+                <a class="nav-link ham-link text-white ml-3" href="#">Help</a>
+                <a class="nav-link ham-link text-white ml-3" href="#">Download</a>
+                <a class="nav-link ham-link text-white ml-3" href="#">Privacy</a>
+                <a class="nav-link ham-link text-white ml-3" href="#">Terms</a>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-background">
+        <div class="container">
+            <div class="row">
+                <input type="checkbox" id="toggleBanner" class="toggle-checkbox">
+
+                <div class="col-12 banner pb-2" id="banner">
+                    <label for="toggleBanner" class="close">
+                        <i class="fa-solid fa-x mt-3 close-icon"></i>
+                    </label>
+                    <h3 class="head">Get Premium</h3>
+                    <p class="para">Take control of your listening with ad-free music. Cancel anytime</p>
+                    <button class="btn-opn premium mb-5">Get Premium</button>
+                </div>
+                <div class="col-12 first-card">
+                    <h3 class="section-titles mt-2">Popular artists</h3>
+                    <div class="artists-container d-flex flex-row justify-content-start">
+                        <div class="card-container">
+                            <div>
+                                <img src="https://i.discogs.com/AYxV6QieOO154G_I7rRTuB5Fwa8xILZ53x0XGnhreZU/rs:fit/g:sm/q:90/h:515/w:525/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM4OTUw/MzQtMTUxNzE1Nzc2/MS0yNjk3LmpwZWc.jpeg" class="artists-img">
+                                <p class="artists-name mt-1">Pritam</p>
+                            </div>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://cdn.wallpapersafari.com/60/23/Ya4eFJ.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Arijit Singh</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.8OIxmOL2yYg5sxnmDbwrNgHaHa&pid=Api&P=0&h=180" class="artists-img">
+
+                            <p class="artists-name mt-1">A.R.Rahman</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i0.wp.com/urbanasian.com/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-27-at-11.57.10-AM-e1661772333370.jpeg?fit=854%2C665&ssl=1" class="artists-img">
+                            <p class="artists-name mt-1">Sachin-Jigar</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://3.bp.blogspot.com/-YPnlzsMyC-s/VnQfo8pwSQI/AAAAAAAAFv8/e6QuqhC4zJo/s1600/z%2B%25287%2529.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Anirudh Ravichandar</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://images.genius.com/797ee1529f9a43a3836c5ae9152e7c3d.1000x1000x1.png" class="artists-img">
+                            <p class="artists-name mt-1">Vishal Mishra</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://musicschool.in/wp-content/uploads/2020/10/Atif-Aslam-Cover-photo.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Atif Aslam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h3 class="section-titles mt-2">Popular albums</h3>
+                    <div class="artists-container d-flex flex-row justify-content-start">
+                        <div class="card-container">
+                            <img src="https://images.genius.com/2303e8f9f55efcc1fe2391e6091c4882.1000x1000x1.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Ek Tha Raja</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/db/ad/5e/dbad5e8b-0bee-d962-92d4-021c90e375ac/8902894362092_cover.jpg/1200x1200bf-60.jpg" class="artists-img">
+                            <p class="artists-name mt-1">ANIMAL</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273348468c203278d510f0cbc5a" class="artists-img">
+                            <p class="artists-name mt-1">Aashiqui 2</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://a10.gaanacdn.com/images/albums/45/4741645/crop_480x480_4741645.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Sajni</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://res.cloudinary.com/dhzux91au/image/upload/v1720668405/item-9_xs7koo.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Moosetape</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2731a8c4618eda885a406958dd0" class="artists-img">
+                            <p class="artists-name mt-1">Still Rollin</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3e/ab/82/3eab8268-4a1d-a04b-7336-a3e583cf8b4c/cover.jpg/1200x1200bf-60.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Aavesham</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h3 class="section-titles mt-2">Popular radio</h3>
+                    <div class="artists-container d-flex flex-row justify-content-start">
+                        <div class="card-container">
+                            <img src="https://seeded-session-images.scdn.co/v1/img/artist/07iEy1AecUPVzfC2J2gCHR/en" class="artists-img">
+                            <p class="artists-name mt-1">Ikka Radio</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2730ece3e23fc94cbc474c5264d" class="artists-img">
+                            <p class="artists-name mt-1">Arijit Singh Radio</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2731dcf7f62fa1a72f1939456bb" class="artists-img">
+                            <p class="artists-name mt-1">Udit Narayan</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2734afcaf5579c935a3307bf6ea" class="artists-img">
+                            <p class="artists-name mt-1">Sid Sriram</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273b0fd8311c0706bea458cd6d9" class="artists-img">
+                            <p class="artists-name mt-1">IIaiyaraaja Radio</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273c0ea557a5841a2b298c126ce" class="artists-img">
+                            <p class="artists-name mt-1">A.R.Rahman Radio</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273d0c4d80c27e62c3ab923035f" class="artists-img">
+                            <p class="artists-name mt-1">Kishore Kumar Radio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h3 class="section-titles mt-2">Featured Charts</h3>
+                    <div class="artists-container d-flex flex-row justify-content-start">
+                        <div class="card-container">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_large.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Top Songs-Global</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://kawsar37.github.io/Spotify-Clone/assets/top_song_usa.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Top Songs-USA</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_large.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Top 50-Global</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_large.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Top 50-USA</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_large.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Viral 50-Global</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Viral 50-USA</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h3 class="section-titles mt-2">Spotify Playlists</h3>
+                    <div class="artists-container d-flex flex-row justify-content-start">
+                        <div class="card-container">
+                            <img src="https://i.scdn.co/image/ab67706f00000003d971c6c23114fc7636dc23eb" class="artists-img">
+                            <p class="artists-name mt-1">Viral Hits</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/57c24871822747.5cb8b789ed146.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Chillihop</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67706f00000003a259e07a24c5b6ccf60de2d3" class="artists-img">
+                            <p class="artists-name mt-1">Soft Pop Hits</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67706f000000039c8d31c332db9f853d3a41bb" class="artists-img">
+                            <p class="artists-name mt-1">phonk</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67706f000000036808b15e5db5e5569aae1471" class="artists-img">
+                            <p class="artists-name mt-1">Jazz in Background</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://routenote.com/blog/wp-content/uploads/2020/08/RapCaviar.jpg" class="artists-img">
+                            <p class="artists-name mt-1">RapCavier</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67706f0000000390b31bdc0f3a0ae203242fbc" class="artists-img">
+                            <p class="artists-name mt-1">Calming Acoustic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h3 class="section-titles mt-2">Trending Episodes</h3>
+                    <div class="artists-container d-flex flex-row justify-content-start">
+                        <div class="card-container">
+                            <img src="https://i.scdn.co/image/ab67706f000000023f5fc56905200760a65040bf" class="artists-img">
+                            <p class="artists-name mt-1">Welcome Back RJ...</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo400/36906178/36906178-1678990172463-753ebaf02c2bb.jpg" class="artists-img">
+                            <p class="artists-name mt-1">#73:Well Of Horrors..</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://www.mnmtalkies.com/wp-content/uploads/2021/03/I-Hear-You-1400X1400-1-640x640.jpg" class="artists-img">
+                            <p class="artists-name mt-1">Anubis:God of Death..</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab6765630000ba8a36dbb0b2d65004488fcc322f" class="artists-img">
+                            <p class="artists-name mt-1">Mahabharata</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2736488eb1556250b742082a961" class="artists-img">
+                            <p class="artists-name mt-1">Relaxing Rain</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273a45ab76f2b9f545bc62c6335" class="artists-img">
+                            <p class="artists-name mt-1">Ep 8-Ye Na Thi..</p>
+                        </div>
+                        <div class="ml-2 card-container">
+                            <img src="https://i.scdn.co/image/f7304cca71d5cffd2ccc15de8c1759b9d8425530" class="artists-img">
+                            <p class="artists-name mt-1">Asatha Povathu...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-2">
+                    <h3 class="final-heading mt-5 mt-md-5">Company</h3>
+                    <p class="final-para">About</p>
+                    <p class="final-para">Jobs</p>
+                    <p class="final-para">For the Record</p>
+                </div>
+
+                <div class="col-12 col-md-2">
+                    <h3 class="final-heading mt-3 mt-md-5">Communities</h3>
+                    <p class="final-para">For Artists</p>
+                    <p class="final-para">Developers</p>
+                    <p class="final-para">Advertising</p>
+                    <p class="final-para">Investors</p>
+                    <p class="final-para">Vendors</p>
+                </div>
+
+                <div class="col-12 col-md-2">
+                    <h3 class="final-heading mt-3 mt-md-5">Useful links</h3>
+                    <p class="final-para">Support</p>
+                    <p class="final-para">Free Mobile App</p>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3 class="final-heading mt-3 mt-md-5">Spotify Plans</h3>
+                    <p class="final-para">Premium Individual</p>
+                    <p class="final-para">Premium Duo</p>
+                    <p class="final-para">Premium Family</p>
+                    <p class="final-para">Premium Student</p>
+                    <p class="final-para"> Spotify Free</p>
+                </div>
+
+
+                <div class="col-12 col-md-2 d-flex flex-row justify-content-start mt-2 mb-2 mt-md-5">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram social"></i>
+                    </div>
+                    <div class="social-icon ml-3">
+                        <i class="fa-brands fa-twitter social"></i>
+                    </div>
+                    <div class="social-icon ml-3">
+                        <i class="fa-brands fa-facebook social"></i>
+                    </div>
+
+
+                </div>
+                <hr>
+                <div class="col-12 mt-3 d-md-none">
+                    <div class="d-flex flex-row justify-content-start">
+                        <p class="btm-text">Legal</p>
+                        <p class="btm-text ml-3">Safety & Privacy Center</p>
+                        <p class="btm-text ml-3">Privacy Policy</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start">
+
+                        <p class="btm-text">Cookies</p>
+                        <p class="btm-text ml-3">About Ads</p>
+                        <p class="btm-text ml-3">Accessibility</p>
+
+                    </div>
+
+                </div>
+                <div class="col-12 d-md-none">
+                    <p class="btm-text"><i class="fa-regular fa-copyright copy mr-1"></i>2024 Spotify</p>
+                    <p class="btm-text">AB</p>
+                    <h5 class="lang"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white" class="bi bi-globe mr-2" viewBox="0 0 16 16">
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                        </svg>English</h5>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
